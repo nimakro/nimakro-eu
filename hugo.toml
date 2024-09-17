@@ -1,0 +1,46 @@
+baseURL = 'https://nimakro.eu'
+languageCode = 'de'
+title = "Nimakro's Website"
+
+[languages]
+  [languages.de.params]
+    languageName = "Deutsch"
+    title = "Nimakro's Website"
+    subtitle = "Alles möggliche"
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+    minuteReadingTime = "min read"
+    words = "words"
+
+    [languages.en.params.logo]
+      logoText = "Nimakro Labs"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      # Submenus is available since v2.1.0
+      # [[languages.en.menu.main]]
+      #   identifier = "submenuParent"
+      #   name = "Submenu"
+      # [[languages.en.menu.main]]
+      #   parent = "submenuParent"
+      #   identifier = "anItem"
+      #   name = "AnItem"
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+
+[module]
+  # this is needed when you fetch the theme as a submodule to your repo.
+  # replacements = "github.com/mirus-ua/hugo-theme-re-terminal -> themes/re-terminal"
+[[module.imports]]
+  path = 'github.com/mirus-ua/hugo-theme-re-terminal'
+
